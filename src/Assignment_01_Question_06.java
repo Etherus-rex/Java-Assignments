@@ -15,31 +15,31 @@ public class Assignment_01_Question_06 {
 
         for(int i : arr){
             for(int j:arr){
-                if (i > j){
-                    if (i > max){
-                        max = i ;
+                if (i > j) {
+                    if (i > max) {
+                        max = i;
                     }
+                }
                 else if (j > i){
                     if (j > max){
                         max = j ;
                         }
                     }
-                }
             }
         }
 
         for(int m : arr){
             for(int n:arr){
-                if (m < n){
-                    if (m < min){
-                        min = m ;
-                    }
-                else if (n < m){
-                    if (n < max){
-                        max = n ;
-                        }
+                if (m < n) {
+                    if (m < min) {
+                        min = m;
                     }
                 }
+                else if (n < m){
+                    if (n < min){
+                        min = n ;
+                        }
+                    }
             }
         }
 
