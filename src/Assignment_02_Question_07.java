@@ -8,6 +8,30 @@ interface base {
     void display() ;
     void count()  ;
 }
+class newPerson implements base {
+    static int maxCount ;
+    String name ;
+
+    public void setName(String name ){
+        this.name = name ;
+    }
+
+    public void display (){
+        System.out.println("The name of the person ; " + name );
+    }
+    public void count(){
+        int maxCount = name.length();
+        System.out.println("The max count of the persons name is  ; " +maxCount);
+    }
+}
 
 public class Assignment_02_Question_07 {
+    public static void main(String[] args){
+        newPerson p =new newPerson() ;
+
+        p.setName("Rohit Mishra");
+        p.display();
+        p.count();
+    }
 }
+
