@@ -29,7 +29,19 @@ public class template_For_Linked_List {
                 Head = n ;
             }
             Node x = Head ;
+            Head = n ;
+            Head.next = x ;
+        }
 
+        public void removeF(){
+            Head.next = Head ;
+        }
+
+        public void removeL(){
+            Node last = Head ;
+            while(last != null){
+                last = last.next ;
+            }
 
         }
     }
